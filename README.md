@@ -472,6 +472,12 @@ The website includes:
 ✅ Lighthouse ≥ 95 (Performance/SEO/Best Practices/Accessibility)  
 ✅ README explains tokens, i18n, MDX, deploy  
 
+
+## 👤 Author
+
+https://github.com/yizpuentesc
+https://github.com/Divisy
+
 ## License
 
 Copyright © 2025 Divisy. All rights reserved.
