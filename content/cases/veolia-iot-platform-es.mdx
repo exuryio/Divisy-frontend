@@ -1,0 +1,93 @@
+---
+title: Veolia - Plataforma IoT para Monitoreo Ambiental
+description: Construimos una plataforma IoT para monitoreo ambiental en tiempo real, reduciendo costos operativos en 35% y mejorando la precisión de reportes de cumplimiento en 95%.
+locale: es
+slug: veolia-iot-platform
+challenge: Veolia, una empresa global de servicios ambientales, necesitaba una plataforma IoT para monitorear calidad de agua, emisiones de aire y gestión de residuos en cientos de instalaciones. El sistema de monitoreo manual existente era consumidor de tiempo, propenso a errores y no podía proporcionar alertas en tiempo real para incidentes ambientales.
+approach: Diseñamos e implementamos una plataforma IoT integral que recolecta datos de miles de sensores, los procesa en tiempo real y proporciona dashboards para gerentes de instalaciones y equipos de cumplimiento. Integramos con sistemas SCADA existentes y construimos analítica predictiva para mantenimiento proactivo.
+results:
+  - 35% de reducción en costos operativos de monitoreo
+  - 95% de mejora en precisión de reportes de cumplimiento
+  - Alertas en tiempo real reduciendo tiempo de respuesta a incidentes en 70%
+  - 40% de reducción en incidentes ambientales a través de analítica predictiva
+  - 50% más rápida generación de reportes de cumplimiento
+techStack:
+  - AWS IoT Core & Greengrass
+  - Python & Node.js
+  - InfluxDB & TimescaleDB
+  - Grafana & React
+  - Protocolos MQTT & CoAP
+  - Docker & Kubernetes
+industry: Servicios Ambientales / IoT
+publishedAt: 2024-04-15
+featured: true
+testimonial: La plataforma IoT de Divisy ha transformado cómo monitoreamos y gestionamos nuestras operaciones ambientales. Los insights en tiempo real y capacidades predictivas han mejorado significativamente nuestro cumplimiento y eficiencia operativa.
+testimonialAuthor: Sophie Laurent
+testimonialRole: Directora de Transformación Digital
+company: Veolia
+---
+
+## Desafío
+
+Veolia opera cientos de plantas de tratamiento de agua, instalaciones de gestión de residuos y sitios industriales en múltiples países. Necesitaban:
+
+- Monitoreo en tiempo real de calidad de agua, emisiones de aire y métricas de residuos
+- Reportes automatizados de cumplimiento a autoridades ambientales
+- Analítica predictiva para prevenir incidentes ambientales
+- Integración con sistemas SCADA y de control industrial existentes
+- Plataforma escalable para soportar miles de sensores IoT
+- Acceso móvil para técnicos de campo y gerentes de instalaciones
+
+Los procesos existentes de monitoreo y reportes manuales eran ineficientes y propensos a errores.
+
+## Enfoque
+
+Diseñamos una arquitectura integral de plataforma IoT:
+
+1. **Infraestructura IoT**: AWS IoT Core para gestión de dispositivos y enrutamiento de mensajes MQTT
+2. **Computación Edge**: AWS Greengrass para procesamiento local en instalaciones con conectividad limitada
+3. **Pipeline de Datos**: Pipeline de streaming en tiempo real usando Kinesis para ingestión de datos de sensores
+4. **Base de Datos de Series Temporales**: InfluxDB y TimescaleDB para almacenamiento y consulta eficiente de datos de sensores
+5. **Motor de Analítica**: Analítica basada en Python para procesamiento en tiempo real y modelos predictivos
+6. **Visualización**: Dashboards Grafana y aplicaciones React personalizadas para gerentes de instalaciones
+7. **Automatización de Cumplimiento**: Generación automatizada de reportes para presentaciones regulatorias
+8. **Sistema de Alertas**: Alertas en tiempo real vía SMS, email y notificaciones push móviles
+
+## Arquitectura
+
+La arquitectura de la plataforma incluyó:
+
+- **Capa de Dispositivos**: Sensores IoT (calidad de agua, calidad de aire, medidores de flujo) conectados vía MQTT/CoAP
+- **Capa Edge**: AWS Greengrass para procesamiento local y capacidad offline
+- **Capa en la Nube**: AWS IoT Core, Kinesis, Lambda para procesamiento de datos
+- **Almacenamiento**: InfluxDB para datos de series temporales, S3 para archivado a largo plazo
+- **Analítica**: Procesamiento de streams en tiempo real y analítica batch para modelos predictivos
+- **Capa de Aplicación**: Dashboards React, aplicaciones móviles y API para integraciones
+- **Integración**: APIs REST y puentes MQTT para integración de sistemas SCADA
+
+## Resultados
+
+La plataforma IoT entregó mejoras operativas significativas:
+
+- **35% de reducción en costos operativos de monitoreo** a través de automatización
+- **95% de mejora en precisión de reportes de cumplimiento** con validación de datos automatizada
+- **Alertas en tiempo real** reduciendo tiempo de respuesta a incidentes en 70% (de 2 horas a 36 minutos)
+- **40% de reducción en incidentes ambientales** a través de mantenimiento predictivo y sistemas de alerta temprana
+- **50% más rápida generación de reportes de cumplimiento** - de 2 semanas a 1 semana
+
+## Stack Tecnológico
+
+- **Plataforma IoT**: AWS IoT Core, AWS Greengrass
+- **Backend**: Python, Node.js, FastAPI
+- **Bases de Datos**: InfluxDB, TimescaleDB, PostgreSQL
+- **Streaming**: AWS Kinesis, Apache Kafka
+- **Frontend**: React, Next.js, Grafana
+- **Móvil**: React Native
+- **Protocolos**: MQTT, CoAP, HTTP/HTTPS
+- **Infraestructura**: Docker, Kubernetes, Terraform
+- **Analítica**: Python (Pandas, NumPy), TensorFlow (para modelos predictivos)
+
+## Impacto
+
+Veolia ahora monitorea más de 5,000 sensores IoT en 200+ instalaciones en tiempo real. La plataforma procesa más de 100 millones de lecturas de sensores diariamente y genera reportes automatizados de cumplimiento para múltiples organismos regulatorios. Las capacidades de analítica predictiva han prevenido numerosos incidentes ambientales, ahorrando millones en multas potenciales y costos de remediación. Los técnicos de campo pueden acceder a datos y alertas en tiempo real vía aplicaciones móviles, mejorando tiempos de respuesta y eficiencia operativa.
+

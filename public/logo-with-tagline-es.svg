@@ -1,0 +1,12 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wordmark: Divisy - Refined typography -->
+  <text x="0" y="22" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#0A0D14" letter-spacing="-0.03em">Divisy</text>
+  
+  <!-- Distinctive clarity dot - Closer to text -->
+  <circle cx="78" cy="11" r="3" fill="#0D7377" opacity="0.95"/>
+  <circle cx="78" cy="11" r="2" fill="#14A085" opacity="0.85"/>
+  <circle cx="78" cy="11" r="1.2" fill="#1EC8A3" opacity="0.6"/>
+  
+  <!-- Tagline - Refined typography -->
+  <text x="0" y="40" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="400" fill="#64748B" letter-spacing="0.015em">Claridad, no dependencia</text>
+</svg>

@@ -1,0 +1,84 @@
+---
+title: White Hat Gaming - iGaming Platform Architecture & Compliance
+description: Built scalable iGaming platform with real-time compliance monitoring, reducing regulatory risk by 90% and enabling 3x growth.
+locale: en
+slug: white-hat-gaming
+challenge: White Hat Gaming needed a modern, compliant iGaming platform that could scale across multiple jurisdictions while maintaining strict regulatory compliance. The existing system struggled with real-time monitoring, KYC/AML integration, and multi-region deployment requirements.
+approach: We designed and implemented a cloud-native iGaming platform on AWS with real-time compliance monitoring, integrated KYC/AML providers, and automated regulatory reporting. We built a microservices architecture that could scale independently and support multiple gaming verticals.
+results:
+  - 90% reduction in regulatory compliance risk
+  - 3x platform scalability for concurrent users
+  - 99.9% uptime during peak gaming events
+  - 60% faster time-to-market for new game integrations
+  - Real-time fraud detection with less than 100ms latency
+techStack:
+  - AWS (ECS, RDS, ElastiCache, Kinesis)
+  - Node.js & TypeScript
+  - PostgreSQL & Redis
+  - Docker & Kubernetes
+  - Stripe, Sumsub (KYC/AML)
+  - React & Next.js
+industry: iGaming / RegTech
+image: https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2070&auto=format&fit=crop
+publishedAt: 2025-03-20
+featured: true
+testimonial: Divisy delivered a world-class iGaming platform that not only meets but exceeds regulatory requirements. Their expertise in compliance and cloud architecture was instrumental in our success.
+testimonialAuthor: James Mitchell
+testimonialRole: Chief Technology Officer
+company: White Hat Gaming
+---
+
+## Challenge
+
+White Hat Gaming, a leading iGaming operator, required a modern platform capable of handling high-volume transactions while maintaining strict compliance across multiple jurisdictions. The existing legacy system couldn't support:
+
+- Real-time compliance monitoring and reporting
+- Multi-jurisdiction regulatory requirements (UK, Malta, Gibraltar)
+- Scalable infrastructure for peak gaming events
+- Fast integration of new game providers
+- Automated KYC/AML verification workflows
+
+## Approach
+
+We designed a cloud-native microservices architecture on AWS that separated gaming logic, payment processing, compliance monitoring, and user management into independent services. This approach enabled:
+
+1. **Compliance-First Architecture**: Built-in regulatory monitoring with automated reporting to gaming authorities
+2. **Real-Time Processing**: Event-driven architecture using AWS Kinesis for real-time fraud detection and compliance checks
+3. **Multi-Region Deployment**: Infrastructure designed to support multiple jurisdictions with region-specific compliance rules
+4. **Scalable Payment Processing**: Integrated multiple payment gateways with failover capabilities
+5. **KYC/AML Integration**: Seamless integration with Sumsub and other providers for automated identity verification
+
+## Architecture
+
+The platform architecture leveraged:
+
+- **Container Orchestration**: AWS ECS with auto-scaling groups for gaming services
+- **Event Streaming**: AWS Kinesis for real-time transaction monitoring and fraud detection
+- **Database Strategy**: PostgreSQL for transactional data, Redis for session management and caching
+- **API Gateway**: Centralized API management with rate limiting and security policies
+- **Monitoring & Alerting**: CloudWatch and custom dashboards for compliance metrics
+
+## Results
+
+The new platform delivered significant improvements across all key metrics:
+
+- **90% reduction in regulatory compliance risk** through automated monitoring and reporting
+- **3x platform scalability** - now handles 50,000+ concurrent users during peak events
+- **99.9% uptime** achieved during major gaming tournaments and events
+- **60% faster time-to-market** for integrating new game providers (from 6 weeks to 2.5 weeks)
+- **Real-time fraud detection** with sub-100ms latency, preventing fraudulent transactions before completion
+
+## Tech Stack
+
+- **Cloud**: AWS (ECS, RDS, ElastiCache, Kinesis, CloudWatch)
+- **Backend**: Node.js, TypeScript, Express.js
+- **Databases**: PostgreSQL, Redis
+- **Containerization**: Docker, Kubernetes
+- **Integrations**: Stripe, Sumsub (KYC/AML), multiple game provider APIs
+- **Frontend**: React, Next.js
+- **DevOps**: GitHub Actions, Terraform, AWS CDK
+
+## Impact
+
+White Hat Gaming successfully launched in three new jurisdictions within 6 months, with the platform handling over 2 million transactions monthly. The compliance automation reduced manual oversight by 80%, allowing the team to focus on product innovation rather than regulatory reporting.
+

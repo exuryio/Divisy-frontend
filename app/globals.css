@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light theme (default) */
+  :root {
+    /* Background colors */
+    --bg-page: #FAFBFC; /* Soft, clean page background */
+    --surface: #FFFFFF; /* Pure white for cards, panels */
+    --surface-subtle: #F8F9FA; /* Subtle surface variant */
+    
+    /* Text colors */
+    --text-primary: #0A0D14; /* Deep charcoal for primary text */
+    --text-muted: #64748B; /* Slate for secondary text */
+    
+    /* Brand colors - Deep Professional Blue + Refined Teal */
+    --brand-primary: #0F4C75; /* Deep Professional Blue - Trust, expertise, enterprise */
+    --brand-primary-light: #3282B8; /* Interactive states, hover */
+    --brand-primary-dark: #0A3A5C; /* Pressed states, depth */
+    --brand-accent: #0D7377; /* Refined Teal - Growth, transformation, innovation */
+    --brand-accent-light: #14A085; /* Highlights, success states */
+    --brand-accent-dark: #0A5D61; /* Depth, emphasis */
+    
+    /* Border colors */
+    --border-subtle: #E2E8F0; /* Light borders */
+    --border-strong: #CBD5E1; /* Defined borders */
+    
+    /* Status colors */
+    --success: #14A085; /* Teal - aligned with accent */
+    --warn: #F59E0B; /* Amber */
+    --error: #EF4444; /* Red */
+    
+    /* Legacy shadcn compatibility */
+    --background: var(--bg-page);
+    --foreground: var(--text-primary);
+    --card: var(--surface);
+    --card-foreground: var(--text-primary);
+    --popover: var(--surface);
+    --popover-foreground: var(--text-primary);
+    --primary: var(--brand-primary);
+    --primary-foreground: #FFFFFF;
+    --secondary: var(--border-subtle);
+    --secondary-foreground: var(--text-primary);
+    --muted: var(--border-subtle);
+    --muted-foreground: var(--text-muted);
+    --accent: var(--brand-accent);
+    --accent-foreground: #FFFFFF;
+    --destructive: var(--error);
+    --destructive-foreground: #FFFFFF;
+    --border: var(--border-subtle);
+    --input: var(--border-subtle);
+    --ring: var(--brand-primary);
+    --radius: 14px;
+  }
+
+  /* Dark theme */
+  [data-theme='dark'],
+  .dark {
+    --bg-page: #0A0D14; /* Deep charcoal base */
+    --surface: #141821; /* Elevated surfaces */
+    --surface-subtle: #1A1F2E; /* Subtle surface variant */
+    --text-primary: #F1F5F9; /* Light slate for primary text */
+    --text-muted: #94A3B8; /* Muted slate for secondary text */
+    
+    /* Brand colors - Lighter variants for dark mode visibility */
+    --brand-primary: #3282B8; /* Lighter for dark mode visibility */
+    --brand-primary-light: #4A9BD4; /* Hover states in dark mode */
+    --brand-primary-dark: #0F4C75; /* Pressed states in dark mode */
+    --brand-accent: #14A085; /* Maintain vibrancy in dark mode */
+    --brand-accent-light: #1EC8A3; /* Highlights in dark mode */
+    --brand-accent-dark: #0D7377; /* Depth in dark mode */
+    
+    --border-subtle: #1E293B; /* Subtle borders */
+    --border-strong: #334155; /* Defined borders */
+    --success: #14A085; /* Teal - aligned with accent */
+    --warn: #F59E0B; /* Amber */
+    --error: #EF4444; /* Red */
+    
+    /* Legacy shadcn compatibility */
+    --background: var(--bg-page);
+    --foreground: var(--text-primary);
+    --card: var(--surface);
+    --card-foreground: var(--text-primary);
+    --popover: var(--surface);
+    --popover-foreground: var(--text-primary);
+    --primary: var(--brand-primary);
+    --primary-foreground: #FFFFFF;
+    --secondary: var(--border-subtle);
+    --secondary-foreground: var(--text-primary);
+    --muted: var(--border-subtle);
+    --muted-foreground: var(--text-muted);
+    --accent: var(--brand-accent);
+    --accent-foreground: #FFFFFF;
+    --destructive: var(--error);
+    --destructive-foreground: #FFFFFF;
+    --border: var(--border-subtle);
+    --input: var(--border-subtle);
+    --ring: var(--brand-primary);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    @apply bg-[var(--bg-page)] text-[var(--text-primary)];
+    font-family: 'Inter', 'IBM Plex Sans', system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Focus styles for accessibility */
+  :focus-visible {
+    outline: 2px solid var(--brand-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Typography utilities */
+  .text-display-1 {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 600;
+  }
+
+  .text-display-2 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+  }
+
+  .text-heading-1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+
+  .text-heading-2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  .text-heading-3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .text-body-lg {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .text-body-md {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  .text-body-sm {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  /* Container utilities */
+  .container-content {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    .container-content {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+}

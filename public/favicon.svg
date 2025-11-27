@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Magician Archetype Symbol: Transformation and Vision -->
+  <g id="symbol">
+    <!-- Central transformation point - The source of change and mastery -->
+    <circle cx="16" cy="16" r="4" fill="#0F4C75"/>
+    <circle cx="16" cy="16" r="2" fill="#3282B8" opacity="0.5"/>
+    
+    <!-- Transformation rings - Expanding influence and transformation waves -->
+    <circle cx="16" cy="16" r="6.5" fill="none" stroke="#0F4C75" stroke-width="1.2" opacity="0.3"/>
+    <circle cx="16" cy="16" r="9" fill="none" stroke="#0D7377" stroke-width="1" opacity="0.25"/>
+    <circle cx="16" cy="16" r="11.5" fill="none" stroke="#0D7377" stroke-width="0.8" opacity="0.2"/>
+    
+    <!-- Geometric transformation elements - Four directions representing mastery -->
+    <path d="M16 6L18.5 11L16 16L13.5 11Z" fill="#0D7377" opacity="0.6"/>
+    <path d="M16 26L18.5 21L16 16L13.5 21Z" fill="#0D7377" opacity="0.6"/>
+    <path d="M6 16L11 13.5L16 16L11 18.5Z" fill="#0D7377" opacity="0.6"/>
+    <path d="M26 16L21 13.5L16 16L21 18.5Z" fill="#0D7377" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+---
+title: exury.io - Financial Data Platform & Analytics
+description: Built enterprise-grade financial data platform with real-time analytics, reducing data processing time by 75% and enabling data-driven decision making.
+locale: en
+slug: exury-platform
+challenge: exury.io needed a scalable financial data platform to aggregate, process, and analyze financial data from multiple sources in real-time. The existing system couldn't handle the volume of data, lacked real-time capabilities, and made it difficult for clients to extract actionable insights.
+approach: We designed and implemented a modern data platform on AWS using event-driven architecture, real-time streaming, and advanced analytics. We built a unified data pipeline that could ingest data from multiple sources, process it in real-time, and provide interactive dashboards for clients.
+results:
+  - 75% reduction in data processing time
+  - Real-time analytics with less than 5 second latency
+  - 10x increase in data processing capacity
+  - 40% improvement in client decision-making speed
+  - 99.95% data accuracy through automated validation
+techStack:
+  - AWS (Redshift, Kinesis, Lambda, S3)
+  - Python & Apache Spark
+  - PostgreSQL & TimescaleDB
+  - React & D3.js
+  - Docker & Kubernetes
+industry: Fintech / Data Analytics
+image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop
+publishedAt: 2024-02-10
+featured: true
+testimonial: Divisy transformed our data infrastructure from a bottleneck into a competitive advantage. The real-time analytics capabilities have revolutionized how our clients make financial decisions.
+testimonialAuthor: Maria Rodriguez
+testimonialRole: Chief Product Officer
+company: exury.io
+---
+
+## Challenge
+
+exury.io, a financial data analytics company, required a platform that could:
+
+- Process millions of financial data points daily from multiple sources (exchanges, APIs, databases)
+- Provide real-time analytics and insights to clients
+- Scale horizontally to handle growing data volumes
+- Ensure data accuracy and compliance with financial regulations
+- Enable clients to build custom analytics dashboards
+
+The legacy system was batch-based, taking hours to process data, which made real-time decision-making impossible.
+
+## Approach
+
+We implemented a modern data platform architecture with the following components:
+
+1. **Data Ingestion Layer**: Built on AWS Kinesis for real-time streaming from multiple data sources
+2. **Data Processing**: Apache Spark on EMR for distributed processing of large datasets
+3. **Data Storage**: AWS Redshift for analytical queries, S3 for raw data lake, TimescaleDB for time-series data
+4. **Real-Time Analytics**: Lambda functions for real-time aggregations and calculations
+5. **API & Dashboards**: RESTful APIs and interactive React dashboards with D3.js visualizations
+6. **Data Quality**: Automated validation pipelines ensuring 99.95% data accuracy
+
+## Architecture
+
+The platform architecture followed a modern data pipeline pattern:
+
+- **Ingestion**: Kinesis streams for real-time data ingestion from multiple sources
+- **Processing**: Spark clusters for ETL operations and data transformation
+- **Storage**: Multi-tier storage strategy (S3 for raw data, Redshift for analytics, TimescaleDB for time-series)
+- **Analytics**: Real-time Lambda functions and scheduled Spark jobs for complex analytics
+- **API Layer**: GraphQL and REST APIs for client access
+- **Visualization**: React-based dashboards with real-time updates
+
+## Results
+
+The new platform delivered transformative results:
+
+- **75% reduction in data processing time** - from 4 hours to 1 hour for daily batch processing
+- **Real-time analytics** with less than 5 second latency for streaming data queries
+- **10x increase in data processing capacity** - now handles 50M+ data points daily
+- **40% improvement in client decision-making speed** through real-time insights
+- **99.95% data accuracy** achieved through automated validation and quality checks
+
+## Tech Stack
+
+- **Cloud**: AWS (Redshift, Kinesis, Lambda, S3, EMR, CloudWatch)
+- **Data Processing**: Python, Apache Spark, Pandas
+- **Databases**: PostgreSQL, TimescaleDB, AWS Redshift
+- **Streaming**: AWS Kinesis, Kafka (for on-premise sources)
+- **Frontend**: React, Next.js, D3.js, Chart.js
+- **APIs**: GraphQL (Apollo), REST (FastAPI)
+- **Infrastructure**: Docker, Kubernetes, Terraform
+
+## Impact
+
+exury.io's clients can now make data-driven decisions in real-time, with the platform processing over 50 million financial data points daily. The improved analytics capabilities led to a 30% increase in client retention and enabled the company to onboard enterprise clients requiring real-time financial insights.
