@@ -476,7 +476,7 @@ The website includes:
 ## 👤 Author
 
 https://github.com/yizpuentesc
-https://github.com/Divisy
+https://github.com/exuryio
 
 ## License
 
